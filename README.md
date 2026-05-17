@@ -132,32 +132,6 @@ No spurious transients were observed at state transitions, confirming glitch-fre
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- Any Verilog HDL simulator, e.g.:
-  - [Icarus Verilog](http://iverilog.icarus.com/) (free, open-source)
-  - ModelSim / QuestaSim
-  - Vivado Simulator (for Xilinx FPGAs)
-- GTKWave (optional, for waveform viewing)
-
-### Running the Simulation
-
-```bash
-# Clone the repository
-git clone <your-github-link-here>
-cd fsm-signal-generator
-
-# Compile (Icarus Verilog example)
-iverilog -o sim.out src/fsm_signal_gen.v src/sine_lut.v tb/fsm_signal_gen_tb.v
-
-# Run simulation
-vvp sim.out
-
-# View waveforms (if VCD dump is enabled in testbench)
-gtkwave dump.vcd
-```
 
 ### Selecting a Waveform
 
