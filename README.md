@@ -210,7 +210,7 @@ Digital Systems Design Laboratory | Envision Virtual Project Expo
 
 ### Mentors
 
-| Name | Branch / Year | Contact |
+| Name 
 |------|--------------|---------|
 | Prajna H R | [Branch, Year] | [Email / Roll No.] |
 | Malepati Yashaswi | [Branch, Year] | [Email / Roll No.] |
@@ -220,7 +220,7 @@ Digital Systems Design Laboratory | Envision Virtual Project Expo
 
 | Name | Branch / Year | Contact |
 |------|--------------|---------|
-| [Mentee Name] | [Branch, Year] | [Email / Roll No.] |
+| [Mentee Name] | [Branch, Year] | [Email / Roll No.] 
 | [Mentee Name] | [Branch, Year] | [Email / Roll No.] |
 | [Mentee Name] | [Branch, Year] | [Email / Roll No.] |
 | [Mentee Name] | [Branch, Year] | [Email / Roll No.] |
