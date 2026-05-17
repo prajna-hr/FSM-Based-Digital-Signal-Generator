@@ -21,7 +21,7 @@ An FSM-based digital signal generator implemented in Verilog HDL that produces f
 - [Simulation Results](#simulation-results)
 - [Waveform Parameters](#waveform-parameters)
 - [Technologies Used](#technologies-used)
-- [Selecting waveform](#selecting-waveform)
+- [Getting Started](#getting-started)
 - [Limitations & Future Scope](#limitations--future-scope)
 - [References](#references)
 - [Team](#team)
@@ -80,28 +80,28 @@ The FSM implements a **Moore machine** with four states (S0–S3), one per wavef
 ## Project Structure
 
 ```
-fsm-signal-generator/
-├── src/
-│   ├── fsm_signal_gen.v       # Top-level FSM module
-│   └── sine_lut.v             # 64-entry sine ROM LUT
-├── tb/
-│   └── fsm_signal_gen_tb.v    # Testbench (512-sample verification)
-├── results/
-│   └── waveform_sim.png       # Simulation output screenshot
-├── docs/
-│   └── FSM_DSG_Expo_Report.docx
+FSM-Based-Digital-Signal-Generator/
+├── srcs/
+│   ├── fsm_controller.v           # Top-level FSM controller (Moore machine)
+│   ├── top_signal_generator.v     # Top-level module instantiation
+│   ├── square_wave.v              # Square wave generation logic
+│   ├── sawtooth_wave.v            # Sawtooth wave generation logic
+│   ├── triangle_wave.v            # Triangle wave generation logic
+│   └── sine_wave.v                # Sine wave LUT-based generation
+├── sim/
+│   ├── tb_top_signal_generator.v  # Verilog testbench (512-sample verification)
+│   ├── plot_waveforms.py          # Python script to plot simulation output
+│   └── output_image.png           # Simulation waveform output
 └── README.md
 ```
-
-> Update the structure above to match your actual file layout.
 
 ---
 
 ## Simulation Results
 
-All four waveforms were captured over **512 samples** across the full 8-bit amplitude range using Verilog HDL simulation.
+All four waveforms were captured over **512 samples** across the full 8-bit amplitude range using Verilog HDL simulation. Waveforms were plotted using `sim/plot_waveforms.py`.
 
-<!-- Insert simulation waveform screenshot here -->
+![Simulation Output](sim/output_image.png)
 > **Figure 3 — Simulation Output:** Square, Sawtooth, Triangle, and Sine waveforms (512 samples, 8-bit)
 
 No spurious transients were observed at state transitions, confirming glitch-free operation.
@@ -132,6 +132,37 @@ No spurious transients were observed at state transitions, confirming glitch-fre
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+- Any Verilog HDL simulator, e.g.:
+  - [Icarus Verilog](http://iverilog.icarus.com/) (free, open-source)
+  - ModelSim / QuestaSim
+  - Vivado Simulator (for Xilinx FPGAs)
+- GTKWave (optional, for waveform viewing)
+
+### Running the Simulation
+
+```bash
+# Clone the repository
+git clone https://github.com/prajna-hr/FSM-Based-Digital-Signal-Generator.git
+cd FSM-Based-Digital-Signal-Generator
+
+# Compile (Icarus Verilog example)
+iverilog -o sim.out srcs/top_signal_generator.v srcs/fsm_controller.v \
+  srcs/square_wave.v srcs/sawtooth_wave.v srcs/triangle_wave.v srcs/sine_wave.v \
+  sim/tb_top_signal_generator.v
+
+# Run simulation
+vvp sim.out
+
+# View waveforms (if VCD dump is enabled in testbench)
+gtkwave dump.vcd
+
+# Or plot using the Python script
+python3 sim/plot_waveforms.py
+```
 
 ### Selecting a Waveform
 
