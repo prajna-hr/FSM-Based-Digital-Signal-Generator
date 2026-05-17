@@ -216,8 +216,8 @@ wave_sel = 2'b11; // Sine
 
 ### Mentees
 
-- [Mentee Name]
-- [Mentee Name]
+- Aprameyan R
+- Shravani Kolage
 - [Mentee Name]
 - [Mentee Name]
 
