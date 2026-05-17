@@ -212,7 +212,7 @@ wave_sel = 2'b11; // Sine
 
 - Prajna H R
 - Malepati Yashaswi
-- Gudise Divya Keerti
+- Gudise Divya Keerthi
 
 ### Mentees
 
