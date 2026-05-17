@@ -206,7 +206,7 @@ wave_sel = 2'b11; // Sine
 ## Team
 
 **IEEE Student Branch — NITK Surathkal**  
-Digital Systems Design Laboratory | Envision Virtual Project Expo
+  Envision Virtual Project Expo
 
 ### Mentors
 
