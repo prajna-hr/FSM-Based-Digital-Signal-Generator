@@ -21,7 +21,7 @@ An FSM-based digital signal generator implemented in Verilog HDL that produces f
 - [Simulation Results](#simulation-results)
 - [Waveform Parameters](#waveform-parameters)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
+- [Selecting waveform](#selecting-waveform)
 - [Limitations & Future Scope](#limitations--future-scope)
 - [References](#references)
 - [Team](#team)
