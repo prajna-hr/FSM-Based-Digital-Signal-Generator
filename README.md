@@ -210,20 +210,16 @@ Digital Systems Design Laboratory | Envision Virtual Project Expo
 
 ### Mentors
 
-| Name 
-|------|--------------|---------|
-| Prajna H R | [Branch, Year] | [Email / Roll No.] |
-| Malepati Yashaswi | [Branch, Year] | [Email / Roll No.] |
-| Gudise Divya Keerti | [Branch, Year] | [Email / Roll No.] |
+- Prajna H R
+- Malepati Yashaswi
+- Gudise Divya Keerti
 
 ### Mentees
 
-| Name | Branch / Year | Contact |
-|------|--------------|---------|
-| [Mentee Name] | [Branch, Year] | [Email / Roll No.] 
-| [Mentee Name] | [Branch, Year] | [Email / Roll No.] |
-| [Mentee Name] | [Branch, Year] | [Email / Roll No.] |
-| [Mentee Name] | [Branch, Year] | [Email / Roll No.] |
+- [Mentee Name]
+- [Mentee Name]
+- [Mentee Name]
+- [Mentee Name]
 
 ---
 
